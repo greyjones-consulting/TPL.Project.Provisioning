@@ -1,0 +1,153 @@
+function New-ProjectTeam {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]
+        [int]$ProjectCode,
+
+        [Parameter(Mandatory)]
+        [string]$ProjectName,
+
+        [Parameter(Mandatory = $false)]
+        [string]$Description,
+
+        [Parameter(Mandatory)]
+        [string]$Owner,
+
+        [Parameter(Mandatory = $false)]
+        [string[]]$Members = @(),
+
+        [Parameter(Mandatory)]
+        [string]$ChannelOwner
+    )
+
+    Write-Verbose "Starting team provisioning for project $ProjectCode - $ProjectName"
+
+    # ====================== LOAD CENTRALISED CONFIGURATION ======================
+    $appConfig = Import-PowerShellDataFile -Path "$PSScriptRoot\..\Config\AppConfig.psd1"
+    $teamTemplate = Import-PowerShellDataFile -Path "$PSScriptRoot\..\Config\TeamTemplate.psd1"
+    $contentConfig = Import-PowerShellDataFile -Path "$PSScriptRoot\..\Config\ContentTypeMapping.psd1"
+
+    $cert = ConvertTo-SecureString -String $appConfig.CertificatePassword -AsPlainText -Force
+
+    # ====================== DEFAULT DESCRIPTION ======================
+    if ([String]::IsNullOrWhiteSpace($Description)) {
+        $Description = $teamTemplate.DefaultDescriptionTemplate -f $ProjectName, $ProjectCode
+    }
+
+    # ====================== CONNECT TO SERVICES ======================
+    Connect-MicrosoftTeams `
+        -ApplicationId $appConfig.ClientID `
+        -TenantId $appConfig.Tenant `
+        -CertificateThumbprint $appConfig.CertificateThumbprint `
+        -ErrorAction Stop
+    Write-Verbose "Connected to Microsoft Teams"
+
+    # ====================== PREPARE VIEW FIELDS ======================
+    $viewSourceDocumentsUrl = "$ChannelBaseUrl$($contentConfig.ViewSourceDocuments)"
+
+    Connect-PnPOnline `
+        -Url $viewSourceDocumentsUrl `
+        -ClientId $appConfig.ClientID  `
+        -Tenant $appConfig.Tenant `
+        -CertificatePath $appConfig.CertificatePath `
+        -CertificatePassword $cert
+    $fieldsArrayDocuments1 = (
+        Get-PnPView `
+            -List $contentConfig.ViewLibraryNameProjectDocs `
+            -Identity $contentConfig.ViewProject1
+    ).ViewFields | ForEach-Object { $_.ToString() }
+    $fieldsArrayDocuments2 = (
+        Get-PnPView `
+            -List $contentConfig.ViewLibraryNameProjectDocs `
+            -Identity $contentConfig.ViewProject2
+    ).ViewFields | ForEach-Object { $_.ToString() }
+
+    # ====================== CREATE TEAM (only if it does not exist) ======================
+    $existingTeam = Get-Team | Where-Object { $_.MailNickName -eq $ProjectCode }
+    if ($null -eq $existingTeam) {
+        Write-Verbose "Creating new Microsoft Team..."
+        $newTeam = New-Team `
+            -MailNickName $ProjectCode `
+            -Owner $Owner `
+            -DisplayName $ProjectName `
+            -Description $Description `
+            -AllowAddRemoveApps $false `
+            -AllowCreatePrivateChannels $true `
+            -AllowCreateUpdateChannels $false `
+            -AllowCreateUpdateRemoveConnectors $false `
+            -AllowCreateUpdateRemoveTabs $false `
+            -AllowDeleteChannels $false
+
+        Write-Host "Created New Microsoft Team with Project Code: $($newTeam.MailNickName)" -ForegroundColor Green
+
+        # ====================== CREATE DEFAULT CHANNELS FROM TEMPLATE ======================
+        Write-Verbose "Creating default channels from template..."
+        foreach ($ch in $teamTemplate.DefaultChannels) {
+            New-TeamChannel -GroupId $newTeam.GroupId `
+                -DisplayName $ch.DisplayName `
+                -Description $ch.Description `
+                -MembershipType $ch.MembershipType `
+                -Owner:$($ch.MembershipType -eq 'Private' ? $ChannelOwner : $null)
+            Write-Verbose "Created channel: $($ch.DisplayName)"
+        }
+
+        # Add owners and members
+        if ($Owner) {
+            $Owner | ForEach-Object { Add-TeamUser `
+                    -Role Owner `
+                    -User $_ `
+                    -GroupId $newTeam.GroupId
+            }
+        }
+        if ($Members) { $Members | ForEach-Object { Add-TeamUser -Role Member -User $_ -GroupId $newTeam.GroupId } }
+
+        Start-Sleep -Seconds 5
+
+        # ====================== APPLY SITE TEMPLATE AND CUSTOMISATIONS ======================
+        Connect-PnPOnline `
+            -Url $appConfig.AdminUrl `
+            -ClientId $appConfig.ClientID `
+            -Tenant $appConfig.Tenant `
+            -CertificatePath $appConfig.CertificatePath `
+            -CertificatePassword $cert
+        $newTeamID = Get-Team | Where-Object { $_.MailNickName -eq $ProjectCode }
+        $newMSGroup = Get-PnPMicrosoft365Group `
+            -IncludeSiteUrl `
+            -Identity $newTeamID.GroupId
+        $newTeamSiteUrl = $newMSGroup.SiteUrl
+
+        Connect-PnPOnline `
+            -Url $newTeamSiteUrl `
+            -ClientId $appConfig.ClientID `
+            -Tenant $appConfig.Tenant `
+            -CertificatePath $appConfig.CertificatePath `
+            -CertificatePassword $cert
+        Write-Verbose "Connected to new team site: $newTeamSiteUrl"
+
+        Invoke-PnPSiteTemplate -Path $appConfig.ProjectTemplatePath
+        Add-PnPHubSiteAssociation `
+            -Site $newTeamSiteUrl `
+            -HubSite $appConfig.HubSiteUrl
+        Enable-PnPFeature -Identity $appConfig.DocSetFeatureId -Scope Site
+        Add-PnPContentTypesFromContentTypeHub -ContentTypes $contentConfig.GreyJonesDocumentCT
+        Set-PnPList `
+            -Identity $contentConfig.ViewLibraryName `
+            -EnableContentTypes $true `
+            -OpenDocumentsMode ClientApplication
+        Add-PnPContentTypeToList `
+            -List $contentConfig.ViewLibraryName `
+            -ContentType $contentConfig.GreyJonesDocumentCT
+        Set-PnPSite -LogoFilePath $appConfig.LogoPath
+        Disable-PnPFeature -Identity $appConfig.SitePagesFeatureId
+        Disable-PnPFeature -Identity $appConfig.RecommendationsFeatureId
+
+        # Apply views
+        Add-PnPView `
+            -List $contentConfig.ViewLibraryNameProjectDocs `
+            -Title $contentConfig.ViewProject1 `
+            -Fields $fieldsArrayDocuments1
+
+        Add-PnPView `
+            -List $contentConfig.ViewLibraryNameProjectDocs `
+            -Title $contentConfig.ViewProject2 `
+            -Fields $fieldsArrayDocuments2

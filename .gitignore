@@ -1,0 +1,29 @@
+# Logs and temporary files
+Logs/
+TraceLogs/
+*.log
+*.tmp
+
+# Security Certificates
+PnP/
+*.cer
+*.pfx
+
+# Sensitive data
+Data/projectCodeArray.xlsx
+**/Config/AppConfig.psd1
+
+# Build and module artefacts
+*.zip
+*.nupkg
+
+# VS Code temporary files
+.vscode/*.log
+.vscode/settings.json     # Remove this line if you want to track your VS Code settings
+
+# Windows-specific
+Thumbs.db
+
+# macOS-specific files
+.DS_Store
+**/.DS_Store

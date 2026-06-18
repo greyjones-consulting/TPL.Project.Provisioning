@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "none",
+    "files.trimTrailingWhitespace": true,
+    "files.encoding": "utf8bom",
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.scriptAnalysis.enable": true,
+    "[powershell]": {
+        "editor.defaultFormatter": "ms-vscode.PowerShell"
+    }
+}
