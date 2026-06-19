@@ -1,6 +1,6 @@
 ﻿[CmdletBinding()]
 param(
-    [string]$SourceUrl = "https://greyjonescoza.sharepoint.com/sites/10080-TPL-Project-Template-Contractor-Documentation-Register"
+    [string]$SourceUrl = "https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate-ContractorDocumentationRegister"
 )
 
 Write-Host "=== Export Contractor Documentation Register Template (Config-driven) ===" -ForegroundColor Cyan
