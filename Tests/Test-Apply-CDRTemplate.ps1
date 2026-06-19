@@ -1,10 +1,6 @@
-﻿[CmdletBinding()]
-param(
-    [Parameter(Mandatory = $true)]
-    [string]$TargetSiteUrl
-)
+﻿Write-Host "=== Test Apply CDR Template ===" -ForegroundColor Cyan
 
-Write-Host "=== Test Apply CDR Template ===" -ForegroundColor Cyan
+$TargetSiteUrl = "https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate-ContractorDocumentationRegisterTest1"
 
 # ====================== LOAD CONFIG ======================
 $repoRoot = Split-Path -Path $PSScriptRoot -Parent
@@ -48,7 +44,7 @@ Connect-PnPOnline -Url $TargetSiteUrl `
 Write-Host "Applying CDR template..." -ForegroundColor Cyan
 
 try {
-    Invoke-PnPSiteTemplate -Path $templatePath -Verbose -ErrorAction Stop
+    Invoke-PnPSiteTemplate -Path $templatePath -ExcludeHandlers Pages, Navigation -Verbose -ErrorAction Stop
     Write-Host "✅ CDR Template applied successfully!" -ForegroundColor Green
 }
 catch {

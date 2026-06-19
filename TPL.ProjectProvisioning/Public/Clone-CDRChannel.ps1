@@ -5,11 +5,14 @@ param(
 
 Write-Host "=== Export Contractor Documentation Register Template (Config-driven) ===" -ForegroundColor Cyan
 
-# ====================== LOAD CENTRALISED CONFIGURATION ======================
-$appConfig = Import-PowerShellDataFile -Path "$PSScriptRoot\\..\\Config\\AppConfig.psd1"
+# ====================== LOAD CONFIG ======================
+$repoRoot = Split-Path -Path $PSScriptRoot -Parent
+$appConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning/Config/AppConfig.psd1"
 
-# Resolve paths (same pattern as New-ProjectTeam.ps1)
-$appConfig.CertificatePath = Join-Path -Path $PSScriptRoot -ChildPath $appConfig.CertificatePath
+$appConfig = Import-PowerShellDataFile -Path $appConfigPath
+
+# Resolve Certificate Path
+$appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath
 $CertificatePath = $appConfig.CertificatePath
 
 $cert = ConvertTo-SecureString -String $appConfig.CertificatePassword -AsPlainText -Force

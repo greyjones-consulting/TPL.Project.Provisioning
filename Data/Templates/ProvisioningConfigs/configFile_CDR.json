@@ -7,7 +7,7 @@
     "removeExistingNodes": true
   },
   "pages": {
-    "includeAllClientSidePages": true
+    "includeAllClientSidePages": false
   },
   "persistAssetFiles": true,
   "publishing": {
