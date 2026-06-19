@@ -1,39 +1,59 @@
 ﻿[CmdletBinding()]
 param(
-    [string]$SourceUrl = "https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate-ContractorDocumentationRegister"
+    [Parameter(Mandatory = $true)]
+    [string]$TargetSiteUrl
 )
 
-Write-Host "=== Export Contractor Documentation Register Template (Config-driven) ===" -ForegroundColor Cyan
+Write-Host "=== Test Apply CDR Template ===" -ForegroundColor Cyan
 
-# ====================== LOAD CENTRALISED CONFIGURATION ======================
-$appConfig = Import-PowerShellDataFile -Path (Join-Path $PSScriptRoot "../TPL.ProjectProvisioning/Config/AppConfig.psd1")
-
-# Resolve paths from the repository root
+# ====================== LOAD CONFIG ======================
 $repoRoot = Split-Path -Path $PSScriptRoot -Parent
+$appConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning/Config/AppConfig.psd1"
 
+$appConfig = Import-PowerShellDataFile -Path $appConfigPath
+
+# Resolve Certificate Path
 $appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath
 $CertificatePath = $appConfig.CertificatePath
 
 $cert = ConvertTo-SecureString -String $appConfig.CertificatePassword -AsPlainText -Force
 
-# ====================== PATHS ======================
-$provisioningConfigPath = Join-Path -Path $PSScriptRoot -ChildPath "../../Data/Templates/ProvisioningConfigs/configFile_CDR.json"
-$templateOutPath = Join-Path -Path $PSScriptRoot -ChildPath "../../Data/Templates/projectSiteTemplates/ContractorDocumentationRegister_v1.xml"
+# ====================== TEMPLATE PATH ======================
+$templatePath = Join-Path $repoRoot "Data/Templates/projectSiteTemplates/ContractorDocumentationRegister_v1.xml"
 
-# ====================== CONNECT + EXPORT ======================
-Connect-PnPOnline -Url $SourceUrl `
+if (-not (Test-Path $templatePath)) {
+    Write-Error "Template not found at: $templatePath"
+    exit 1
+}
+
+Write-Host "Using Template: $templatePath" -ForegroundColor Yellow
+
+# ====================== CONNECT ======================
+if (-not $TargetSiteUrl) {
+    Write-Host "Please provide the target site URL as a parameter." -ForegroundColor Red
+    Write-Host "Example:" -ForegroundColor Yellow
+    Write-Host ".\Scripts\Test-Apply-CDRTemplate.ps1 -TargetSiteUrl 'https://greyjonescoza.sharepoint.com/sites/XXXX-Contractor-Documentation-Register-Test1'" -ForegroundColor Yellow
+    exit 1
+}
+
+Write-Host "Connecting to: $TargetSiteUrl" -ForegroundColor Yellow
+
+Connect-PnPOnline -Url $TargetSiteUrl `
     -ClientId $appConfig.ClientID `
     -Tenant $appConfig.Tenant `
     -CertificatePath $CertificatePath `
     -CertificatePassword $cert
 
-Get-PnPSiteTemplate `
-    -Configuration $provisioningConfigPath `
-    -Out $templateOutPath `
-    -ExcludeHandlers SiteSecurity `
-    -Force
+# ====================== APPLY TEMPLATE ======================
+Write-Host "Applying CDR template..." -ForegroundColor Cyan
 
-Write-Host "✅ Template exported successfully!" -ForegroundColor Green
-Write-Host "   File: $templateOutPath" -ForegroundColor Green
-
-Disconnect-PnPOnline
+try {
+    Invoke-PnPSiteTemplate -Path $templatePath -Verbose -ErrorAction Stop
+    Write-Host "✅ CDR Template applied successfully!" -ForegroundColor Green
+}
+catch {
+    Write-Error "Failed to apply template: $($_.Exception.Message)"
+}
+finally {
+    Disconnect-PnPOnline
+}
