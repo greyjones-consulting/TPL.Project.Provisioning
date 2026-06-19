@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-D1DC4B1D4748405D989B48AAAAFB5651">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-D1DC4B1D4748405D989B48AAAAFB5651" Version="1" BaseSiteTemplate="TEAMCHANNEL#1" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__TPLclientLogo.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:SiteSettings AllowDesigner="true" AllowCreateDeclarativeWorkflow="true" AllowSaveDeclarativeWorkflowAsTemplate="true" AllowSavePublishDeclarativeWorkflow="true" SearchBoxInNavBar="Inherit" SearchCenterUrl="" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="50" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="TeamChannelManager_LastSyncTimeStamp" Value="2026/06/19 08:12:07" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="FooterOverlayColor" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="ThemePrimary" Value="#0D2640" Overwrite="false" Indexed="true" />
+        <pnp:PropertyBagEntry Key="FooterColorIndexInDarkMode" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="HeaderColorIndexInDarkMode" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="TeamChannelManager_TeamSiteData" Value="{&quot;HeaderEmphasis&quot;:0,&quot;HeaderColorIndexInLightMode&quot;:-1,&quot;HeaderColorIndexInDarkMode&quot;:-1,&quot;ThemeToken&quot;:&quot;/sites/10080TPLProjectTemplate::0:&quot;,&quot;HubSiteId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;TenantInstanceId&quot;:&quot;9a40e1ca-be99-4dc1-9c21-10442fe1b5cf&quot;,&quot;SiteUrl&quot;:&quot;https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate&quot;,&quot;ErrorTag&quot;:0}" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="HeaderOverlayGradientDirection" Value="0" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="FooterOverlayGradientDirection" Value="0" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="HeaderOverlayOpacity" Value="0" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="FooterColorIndexInLightMode" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="FooterAlignment" Value="0" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="FooterOverlayOpacity" Value="0" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="HeaderColorIndexInLightMode" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="HeaderOverlayColor" Value="-1" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="RectSiteLogoUrl" Value="{site}/SiteAssets/__rectSitelogo__TPLclientLogo.png" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="ThemeApplicationActionHistory" Value="{themecatalog}/Themed/944B1D3E&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/8864111C&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/8864111C&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/8864111C&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/944B1D3E&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/8864111C&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:&quot;/sites/10080TPLProjectTemplate-ContractorDocumentationRegister{themecatalog}/Themed/88AFDDC0&quot;,&quot;version&quot;:&quot;2.0.0&quot;},{&quot;themedCssFolderUrl&quot;:null,&quot;version&quot;:&quot;2.0.0&quot;}]" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="taxonomyhiddenlist" Value="adb79fce-7138-444c-9df8-f5ff25092074" Overwrite="false" />
+      </pnp:PropertyBagEntries>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}" />
+            <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Parent Team" Url="{site}/_layouts/15/groupstatus.aspx?Id=9462e7eb-a988-4190-a78b-157c4ed1d13d&amp;Target=PRIVATECHANNEL" IsExternal="true" />
+            <pnp:NavigationNode Title="TPL_Disciplines" Url="{site}/Lists/TPL_Disciplines" />
+            <pnp:NavigationNode Title="TPL_FunctionalDepts" Url="{site}/Lists/TPL_FunctionalDepts" />
+            <pnp:NavigationNode Title="TPL_DocumentTypes" Url="{site}/Lists/TPL_DocumentTypes" />
+            <pnp:NavigationNode Title="Recent" Url="" IsExternal="true" />
+            <pnp:NavigationNode Title="New Document Entry" Url="{site}/Lists/Contractor Documentation Register CDR/Final View.aspx" />
+            <pnp:NavigationNode Title="TPL_Revisions" Url="{site}/Lists/TPL_Revisions/AllItems.aspx" />
+            <pnp:NavigationNode Title="Document List" Url="{site}/Lists/Document List/AllItems.aspx" />
+            <pnp:NavigationNode Title="Revised Document Entry" Url="{site}/Lists/Revised Document Entry/AllItems.aspx" />
+            <pnp:NavigationNode Title="Contractor Document Register" Url="{site}/Lists/Contractors Document Register/AllItems.aspx" />
+            <pnp:NavigationNode Title="CDR Status" Url="{site}/Lists/CDR Status/AllItems.aspx" />
+            <pnp:NavigationNode Title="New Sheet Entry" Url="{site}/Lists/New Sheet Entry/AllItems.aspx" />
+            <pnp:NavigationNode Title="Sheet Numbers" Url="{site}/Lists/Sheet Numbers/AllItems.aspx" />
+            <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="TaxKeywordTaxHTField" StaticName="TaxKeywordTaxHTField" Name="TaxKeywordTaxHTField" ID="{1390a86a-23da-45f0-8efe-ef36edadfb39}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{5d2cdb5a-94b4-46b4-a487-1a3c51990150}" />
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Enterprise Keywords" StaticName="TaxKeyword" Name="TaxKeyword" ID="{23f27201-bee3-471e-b2e7-b64fd8b7ca38}" ShowInViewForms="TRUE" DefaultListField="TRUE" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" ShowField="Term1033" SourceID="{{siteid}}" Mult="TRUE" Sortable="FALSE">
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{1390a86a-23da-45f0-8efe-ef36edadfb39}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field ID="{86EBE41F-255F-4170-B040-9977528A8BF5}" Name="_SPCollaborators" StaticName="_SPCollaborators" DisplayName="Collaborators" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ReadOnly="TRUE" Hidden="TRUE" />
+        <Field DisplayName="Test Exist 1" Type="Text" Required="FALSE" ID="{41ca9e33-1e5d-4f4f-b21d-776fd150c2b3}" SourceID="{5d2cdb5a-94b4-46b4-a487-1a3c51990150}" StaticName="Test_x0020_Exist_x0020_1" Name="Test_x0020_Exist_x0020_1" Group="TPL Site Columns" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default>Test Exist 1</Default>
+        </Field>
+        <Field ID="{46e6583c-87b2-4560-87e6-734a34780746}" Type="Note" Group="_Hidden" Hidden="TRUE" Name="_SPHiddenHighlightsMetadata" DisplayName="Viva Topics Hidden Highlights" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_SPHiddenHighlightsMetadata" />
+        <Field DisplayName="Text Column 2" Type="Text" Required="FALSE" ID="{22b91365-6a16-490d-a35f-384c98b856fc}" SourceID="{5d2cdb5a-94b4-46b4-a487-1a3c51990150}" StaticName="Text_x0020_Column_x0020_2" Name="Text_x0020_Column_x0020_2" Group="TPL Site Columns" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default>Test 2</Default>
+        </Field>
+        <Field ID="{4C321A6D-2A91-428B-8296-59408B35901A}" Name="_SourceDynamicSectionId" StaticName="_SourceDynamicSectionId" DisplayName="sourceDynamicPageId" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Indexed="TRUE" Description="" ShowInEditForm="FALSE" AllowDeletion="FALSE" Hidden="TRUE" />
+        <Field ID="{D8A77D76-536B-45D2-8B9B-E4E9B00CF3DC}" Name="_Emoji" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" StaticName="_Emoji" Type="Text" DisplayName="Emoji" Sortable="FALSE" />
+        <Field ID="{0F17D094-F613-4D33-8031-7B22650AAD78}" Name="MediaUserMetadata" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" DisplaceOnUpgrade="TRUE" StaticName="MediaUserMetadata" Type="Note" DisplayName="Media User Metadata" Sortable="FALSE" />
+        <Field ID="{b03d6d98-defb-4047-9d2d-a741eb0b4c68}" Type="User" List="UserInfo" Group="_Hidden" Hidden="TRUE" Name="_SPHideListEditorMetadata" DisplayName="Hide Highlights List Editor" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_SPHideListEditorMetadata" />
+        <Field ID="{DCA4E5A0-0887-4480-8F7B-EFCF76B76413}" Name="MediaGeneratedMetadata" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" DisplaceOnUpgrade="TRUE" StaticName="MediaGeneratedMetadata" Type="Note" DisplayName="Media Generated Metadata" Sortable="FALSE" />
+        <Field ID="{577d74a4-b828-4c3c-bfcd-b16d76cdbc0a}" Name="ComplianceTagAppId" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Hidden="TRUE" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" StaticName="ComplianceTagAppId" Type="Text" DisplayName="Label applied by App Id" Sortable="FALSE" />
+        <Field ID="{3BDAB9AC-9E5D-44D4-BDE9-13B37E170618}" Name="_ColorHex" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" StaticName="_ColorHex" Type="Text" DisplayName="Color" Sortable="FALSE" />
+        <Field ID="{76D13CD2-1BAE-45A5-8B74-545B87B65037}" Name="_ColorTag" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ReadOnly="TRUE" DisplaceOnUpgrade="TRUE" Type="Text" StaticName="_ColorTag" DisplayName="Color Tag" Sortable="TRUE" />
+        <Field ID="{031C92FD-9CB6-4AC8-8F5F-636D28E37079}" Name="_SPAuthoringMetadata" StaticName="_SPAuthoringMetadata" DisplayName="Authoring Metadata" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ReadOnly="TRUE" Hidden="TRUE" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x01002A141FE6909C4246B8BA6A0CF9C5150B" Name="Test Exist" Description="" Group="TPL CDR List Content Type" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="41ca9e33-1e5d-4f4f-b21d-776fd150c2b3" Name="Test_x0020_Exist_x0020_1" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x0100DD6B511BFBF88344915AB9CCAAC5761D" Name="Test Exist 2" Description="" Group="TPL CDR List Content Type" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="22b91365-6a16-490d-a35f-384c98b856fc" Name="Text_x0020_Column_x0020_2" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x0101009D1CB255DA76424F860D91F20E6C411800C57E7DC123744954AACC08D1D5260154" Name="Content Freshness" Description="Used to create a dynamic page related to contentfreshness." Group="_Hidden" Hidden="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="86ebe41f-255f-4170-b040-9977528a8bf5" Name="_SPCollaborators" UpdateChildren="true" />
+            <pnp:FieldRef ID="031c92fd-9cb6-4ac8-8f5f-636d28e37079" Name="_SPAuthoringMetadata" UpdateChildren="true" />
+            <pnp:FieldRef ID="4c321a6d-2a91-428b-8296-59408b35901a" Name="_SourceDynamicSectionId" UpdateChildren="true" />
+            <pnp:FieldRef ID="46e6583c-87b2-4560-87e6-734a34780746" Name="_SPHiddenHighlightsMetadata" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b03d6d98-defb-4047-9d2d-a741eb0b4c68" Name="_SPHideListEditorMetadata" Hidden="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Contractor Document Register" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Contractors Document Register" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Contractors Document Register/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Contractors Document Register/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Contractors Document Register/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{C41D7100-B2AC-4381-B8EF-CBC1602C0B32}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Contractors Document Register/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ContractorInternalDocumentNumber" />
+                <FieldRef Name="EmployerDocumentNumber" />
+                <FieldRef Name="DocumentType" />
+                <FieldRef Name="Discipline" />
+                <FieldRef Name="DocumentStatus" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Entry Type" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EntryType" Title="Entry Type" Type="Text" ID="{195bae55-5bc4-4a67-85f8-9207c3add138}" SourceID="{{listid:Contractor Document Register}}" StaticName="EntryType" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Contractor Internal Document Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="ContractorInternalDocumentNumber" Title="Contractor Internal Document Number" Type="Text" ID="{5c009fbf-402d-4f45-a6b2-578f9cf778eb}" SourceID="{{listid:Contractor Document Register}}" StaticName="ContractorInternalDocumentNumber" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="Employer Document Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EmployerDocumentNumber" Title="Employer Document Number" Type="Text" ID="{2b5c4ce2-3238-44d8-934d-f2fe92a9c260}" SourceID="{{listid:Contractor Document Register}}" StaticName="EmployerDocumentNumber" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="Document Type" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="DocumentType" Title="Document Type" Type="Text" ID="{f50660af-11ce-43c2-a2c0-2c483b7eb285}" SourceID="{{listid:Contractor Document Register}}" StaticName="DocumentType" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="Discipline" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Discipline" Title="Discipline" Type="Text" ID="{fa4b44b4-6277-4cf1-9942-2337fcdb1bc0}" SourceID="{{listid:Contractor Document Register}}" StaticName="Discipline" ColName="nvarchar11" RowOrdinal="0" />
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Work in Progress/Draft&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Submitted-Squad Check Acceptance&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-borderColor-GoldFont sp-field-fontSizeSmall sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Submitted-Presentation Acceptance&quot;]},&quot;sp-css-backgroundColor-BgGold sp-field-fontSizeSmall sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Updates Pending&quot;]},&quot;sp-css-backgroundColor-BgPeach sp-css-borderColor-PeachFont sp-field-fontSizeSmall sp-css-color-PeachFont sp-css-color-PeachFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Accepted&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-borderColor-MintGreenFont sp-field-fontSizeSmall sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Obsolete/Superseded&quot;]},&quot;sp-css-backgroundColor-BgCyan sp-field-fontSizeSmall sp-css-color-CyanFont sp-css-color-CyanFont&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Work in Progress/Draft&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Submitted-Squad Check Acceptance&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Submitted-Presentation Acceptance&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Updates Pending&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-PeachFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Accepted&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Obsolete/Superseded&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CyanFont&quot;,&quot;&quot;]}]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="Document Status" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="DocumentStatus" Required="TRUE" Title="Document Status" Type="Choice" ID="{508c3818-a035-4b67-9a44-731c7770c35d}" SourceID="{{listid:Contractor Document Register}}" StaticName="DocumentStatus" ColName="nvarchar12" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Work in Progress/Draft</CHOICE>
+                <CHOICE>Submitted-Squad Check Acceptance</CHOICE>
+                <CHOICE>Submitted-Presentation Acceptance</CHOICE>
+                <CHOICE>Updates Pending</CHOICE>
+                <CHOICE>Accepted</CHOICE>
+                <CHOICE>Obsolete/Superseded</CHOICE>
+              </CHOICES>
+              <Default>Work in Progress/Draft</Default>
+            </Field>
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Document List" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Document List" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Document List/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Document List/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Document List/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" WriteSecurity="4" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{43423CA4-67AA-4242-9651-F2FDF8532B1D}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Document List/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Discipline" />
+                <FieldRef Name="DocumentType" />
+                <FieldRef Name="ContractorDocumentNumber" />
+                <FieldRef Name="EmployerDocumentNumber" />
+                <FieldRef Name="EntryType" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Contractor Document Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="ContractorDocumentNumber" Title="Contractor Document Number" Type="Text" ID="{3dd4a44f-e3a8-46a4-be35-3bb826d5136f}" SourceID="{{listid:Document List}}" StaticName="ContractorDocumentNumber" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Employer Document Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EmployerDocumentNumber" Title="Employer Document Number" Type="Text" ID="{353c4fbb-709e-435d-8c1a-532365e814b9}" SourceID="{{listid:Document List}}" StaticName="EmployerDocumentNumber" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="Document Type" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="DocumentType" Title="Document Type" Type="Text" ID="{ebce4e3b-764c-4cce-ba4d-947a51f62ebc}" SourceID="{{listid:Document List}}" StaticName="DocumentType" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="Discipline" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Discipline" Title="Discipline" Type="Text" ID="{8c46ae87-711e-49d9-a8e9-7201b835e236}" SourceID="{{listid:Document List}}" StaticName="Discipline" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="Entry Type" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EntryType" Title="Entry Type" Type="Text" ID="{6d0cc777-744f-436e-ae7f-c1cdc491bbaf}" SourceID="{{listid:Document List}}" StaticName="EntryType" ColName="nvarchar11" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="New Document Entry" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Contractor Documentation Register CDR" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Contractor Documentation Register CDR/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Contractor Documentation Register CDR/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Contractor Documentation Register CDR/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" Hidden="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6679A97F-82E7-4F55-B677-3F96AD7CD6C4}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Contractor Documentation Register CDR/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="EntryType" />
+                <FieldRef Name="ContractorInternalDocumentNumber" />
+                <FieldRef Name="Revision" />
+                <FieldRef Name="DocumentType" />
+                <FieldRef Name="SelectDiscipline_x003f_" />
+                <FieldRef Name="Discipline" />
+                <FieldRef Name="Discipline_x003a__x0020_Title" />
+                <FieldRef Name="Document_x0020_Type_x003a__x00200" />
+                <FieldRef Name="SequentialNumber" />
+                <FieldRef Name="Document_x0020_Type_x003a__x0020" />
+                <FieldRef Name="Document_x0020_Type_x003a__x00201" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="EmployerDocumentNumber" />
+                <FieldRef Name="DocPrefix_Helper" />
+                <FieldRef Name="ID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{60B55C7B-8DD0-4404-AD37-1257B2788970}" DefaultView="TRUE" Type="HTML" DisplayName="New Entry" Url="{site}/Lists/Contractor Documentation Register CDR/Final View.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <Where>
+                  <Neq>
+                    <FieldRef Name="Status" />
+                    <Value Type="Text">Reviewed by Employer</Value>
+                  </Neq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ContractorInternalDocumentNumber" />
+                <FieldRef Name="Revision" />
+                <FieldRef Name="DocumentType" />
+                <FieldRef Name="SelectDiscipline_x003f_" />
+                <FieldRef Name="Discipline" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="EmployerDocumentNumber" />
+                <FieldRef Name="Document_x0020_Type_x003a__x00201" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CalendarViewStyles>
+                <CalendarViewStyle Title="Day" Type="day" Template="CalendarViewdayChrome" Sequence="1" Default="FALSE" />
+                <CalendarViewStyle Title="Week" Type="week" Template="CalendarViewweekChrome" Sequence="2" Default="FALSE" />
+                <CalendarViewStyle Title="Month" Type="month" Template="CalendarViewmonthChrome" Sequence="3" Default="FALSE" />
+                <CalendarViewStyle Title="Work week" Type="workweek" Template="CalendarViewweekChrome" Sequence="4" Default="FALSE" />
+              </CalendarViewStyles>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The Contractors internal document without the document revision description. If there are multiple drawing sheets, include the first sheet number." DisplayName="Contractor Internal Document Number" Format="Dropdown" MaxLength="255" Name="ContractorInternalDocumentNumber" Required="TRUE" Title="Contractor Internal Document Number" Type="Text" ID="{3c4a14ad-99a4-4dbe-94c1-3178787a6632}" Version="12" StaticName="ContractorInternalDocumentNumber" SourceID="{{listid:New Document Entry}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="Check the Select Discipline column in the CDR list as confirmation if this is required. Otherwise, select 'Not Applicablele'" DisplayName="Discipline" Format="Dropdown" Indexed="FALSE" List="{listid:TPL_Disciplines}" Name="Discipline" Required="TRUE" ShowField="field_1" Title="Discipline" Type="Lookup" ID="{672dca95-bf16-4e7b-9a4d-2799b09df14c}" Version="13" StaticName="Discipline" SourceID="{{listid:New Document Entry}}" ColName="int1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Document Type" Format="Dropdown" Indexed="FALSE" List="{listid:TPL_DocumentTypes}" Name="DocumentType" ShowField="Document_x0020_Type_x0020__x0028" Title="Document Type" Type="Lookup" ID="{d0b9c76e-c992-4f65-b6c3-ce211a6e24aa}" Version="10" StaticName="DocumentType" SourceID="{{listid:New Document Entry}}" ColName="int3" RowOrdinal="0" />
+            <Field DisplayName="Document Type: Title" FieldRef="d0b9c76e-c992-4f65-b6c3-ce211a6e24aa" Format="Dropdown" IsModern="TRUE" List="{listid:TPL_DocumentTypes}" Name="Document_x0020_Type_x003a__x0020" ShowField="Title" Title="Document Type: Title" Type="Lookup" ID="{5f10be1f-d500-4016-b847-0b4cddd84e06}" SourceID="{{listid:New Document Entry}}" StaticName="Document_x0020_Type_x003a__x0020" ReadOnly="TRUE" Version="1" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CommaSeparator="FALSE" CustomUnitOnRight="TRUE" DisplayName="Sequential Number" Format="Dropdown" Max="9999" Min="0" Name="SequentialNumber" Percentage="FALSE" Title="Sequential Number" Type="Number" Unit="None" ID="{b48f13f5-657f-4394-92e2-c904db5772aa}" Version="4" StaticName="SequentialNumber" SourceID="{{listid:New Document Entry}}" ColName="float1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="Only required for Drawing numbers. Use 01 for drawings with one sheet. Leave blank if not applicable." DisplayName="Sheet Number" Format="Dropdown" MaxLength="2" Name="SheetNumber" Title="Sheet Number" Type="Text" ID="{a0893d5f-7750-4804-b11c-d585229d3671}" Version="2" StaticName="SheetNumber" SourceID="{{listid:New Document Entry}}" ColName="nvarchar9" RowOrdinal="0">
+              <Default>01</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Under Employer Review&quot;]},&quot;sp-css-backgroundColor-BgLightGray sp-css-borderColor-LightGrayFont sp-css-color-LightGrayFont sp-css-color-LightGrayFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-backgroundColor-BgCoral sp-css-color-CoralFont sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$Status]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Under Employer Review&quot;]},&quot;sp-css-color-LightGrayFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$Status]&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;rulesOrder&quot;:[0,2,4,1,3,5],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" Description="Change to 'Submitted by Contractor' only once all fields are complete for the Employer document number to generate." DisplayName="Entry Status" FillInChoice="FALSE" Format="Dropdown" Name="Status" Title="Entry Status" Type="Choice" ID="{6321563a-205e-4cd6-915d-30f47ce380c9}" Version="14" StaticName="Status" SourceID="{{listid:New Document Entry}}" ColName="nvarchar10" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Contractors Draft</CHOICE>
+                <CHOICE>Submitted by Contractor</CHOICE>
+                <CHOICE>Under Employer Review</CHOICE>
+                <CHOICE>Rejected by Employer</CHOICE>
+                <CHOICE>Reviewed by Employer</CHOICE>
+              </CHOICES>
+              <Default>Contractors Draft</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Employer Document Number (Proposed)" Format="Dropdown" MaxLength="255" Name="EmployerDocumentNumber" Title="Employer Document Number (Proposed)" Type="Text" ID="{d9d2ec9f-4631-4d7f-8cfe-19a1f3e00e19}" Version="2" StaticName="EmployerDocumentNumber" SourceID="{{listid:New Document Entry}}" ColName="nvarchar11" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Document Type: Class" FieldRef="d0b9c76e-c992-4f65-b6c3-ce211a6e24aa" Format="Dropdown" IsModern="TRUE" List="{listid:TPL_DocumentTypes}" Name="Document_x0020_Type_x003a__x00200" ShowField="field_3" Title="Document Type: Class" Type="Lookup" ID="{bd35007a-defc-432c-9271-bbdf9ad38dbd}" SourceID="{{listid:New Document Entry}}" StaticName="Document_x0020_Type_x003a__x00200" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="DocPrefix_Helper" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="DocPrefix_Helper" Title="DocPrefix_Helper" Type="Text" ID="{a3a31c14-c6ad-4350-ab36-09a69e38a06a}" SourceID="{{listid:New Document Entry}}" StaticName="DocPrefix_Helper" ColName="nvarchar12" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Document Type: NumberingPath" FieldRef="d0b9c76e-c992-4f65-b6c3-ce211a6e24aa" Format="Dropdown" IsModern="TRUE" List="{listid:TPL_DocumentTypes}" Name="Document_x0020_Type_x003a__x00201" ShowField="NumberingPath0" Title="Document Type: NumberingPath" Type="Lookup" ID="{2d1bda28-b7c0-4f6b-9616-de54be696f42}" SourceID="{{listid:New Document Entry}}" StaticName="Document_x0020_Type_x003a__x00201" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Select Discipline?" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="SelectDiscipline_x003f_" Title="Select Discipline?" Type="Text" ID="{7e3c4129-15c4-4787-b21c-aee3c91a7914}" SourceID="{{listid:New Document Entry}}" StaticName="SelectDiscipline_x003f_" ColName="nvarchar13" RowOrdinal="0" Version="2" CustomFormatter="{&quot;$schema&quot;:&quot;https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json&quot;,&quot;elmType&quot;:&quot;div&quot;,&quot;txtContent&quot;:&quot;=if([$Document_x0020_Type_x003a__x00201] == 'Expanded' || [$Document_x0020_Type_x003a__x00201] == 'Expanded-Drawing', 'Yes', 'No')&quot;}" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Discipline: Title" FieldRef="672dca95-bf16-4e7b-9a4d-2799b09df14c" Format="Dropdown" IsModern="TRUE" List="{listid:TPL_Disciplines}" Name="Discipline_x003a__x0020_Title" ShowField="Title" Title="Discipline: Title" Type="Lookup" ID="{f99fba4c-61f3-4b5a-b41a-4847893a1dd3}" SourceID="{{listid:New Document Entry}}" StaticName="Discipline_x003a__x0020_Title" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Revision" Format="Dropdown" Indexed="FALSE" IsModern="TRUE" List="{listid:TPL_Revisions}" Name="Revision" Required="TRUE" ShowField="Title" Title="Revision" Type="Lookup" ID="{fb325718-141c-4c60-bb52-a1ce8e1dfeac}" SourceID="{{listid:New Document Entry}}" StaticName="Revision" ColName="int2" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryType]&quot;,&quot;New Entry&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryType]&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$EntryType]&quot;,&quot;attributes&quot;:{&quot;class&quot;:&quot;&quot;}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" Description="If this entry is a revision to an existing Document Number, select the option 'Document Revision'. Otherwise, select 'New Entry'." DisplayName="Entry Type" FillInChoice="FALSE" Format="Dropdown" Name="EntryType" Title="Entry Type" Type="Choice" ID="{83cdf918-0b33-415c-a865-a4911ee3a26f}" Version="6" StaticName="EntryType" SourceID="{{listid:New Document Entry}}" ColName="nvarchar8" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>New Entry</CHOICE>
+              </CHOICES>
+              <Default>New Entry</Default>
+            </Field>
+            <Field DisplayName="Employer Document Number Short" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EmployerDocumentNumberShort" Title="Employer Document Number Short" Type="Text" ID="{4542b37a-c0a8-4647-927f-b3537a690d71}" SourceID="{{listid:New Document Entry}}" StaticName="EmployerDocumentNumberShort" ColName="nvarchar14" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="New Sheet Entry" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/New Sheet Entry" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/New Sheet Entry/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/New Sheet Entry/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/New Sheet Entry/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{8B6EA14C-DE96-4294-9482-88F51CB1791D}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/New Sheet Entry/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="Employers_x0020_Drawing_x0020_Nu" />
+                <FieldRef Name="DrawingNumber" />
+                <FieldRef Name="Employers_x0020_Drawing_x0020_Nu2" />
+                <FieldRef Name="ContractorsDrawingNumber" />
+                <FieldRef Name="Revision" />
+                <FieldRef Name="NewSheetNumber" />
+                <FieldRef Name="Employers_x0020_Drawing_x0020_Nu1" />
+                <FieldRef Name="Employers_x0020_Drawing_x0020_Nu0" />
+                <FieldRef Name="EntryStatus" />
+                <FieldRef Name="EmployersDrawingNumber" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Entry Type" Format="Dropdown" MaxLength="255" Name="EntryType" Title="Entry Type" Type="Text" ID="{fa75f341-92cb-4cea-82d8-10ce192cf286}" Version="2" StaticName="EntryType" SourceID="{{listid:New Sheet Entry}}" ColName="nvarchar7" RowOrdinal="0">
+              <Default>Sheet Entry</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The base drawing number that sheets will be added to." DisplayName="Contractors Base Drawing Number" Format="Dropdown" Indexed="FALSE" List="{listid:Document List}" Name="DrawingNumber" Required="TRUE" ShowField="ContractorDocumentNumber" Title="Contractors Base Drawing Number" Type="Lookup" ID="{b5c8c591-6dae-4399-967f-70e844995354}" Version="14" StaticName="DrawingNumber" SourceID="{{listid:New Sheet Entry}}" ColName="int1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The number for the new sheet." DisplayName="New Sheet Number" Format="Dropdown" Indexed="FALSE" List="{listid:Sheet Numbers}" Name="NewSheetNumber" Required="TRUE" ShowField="Title" Title="New Sheet Number" Type="Lookup" ID="{82e8d5fa-ae34-4388-93d1-672820f835ec}" Version="2" StaticName="NewSheetNumber" SourceID="{{listid:New Sheet Entry}}" ColName="int2" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The Revision of the New Sheet to be added. Should be a first entry ('A', '0', or '1' as applicable)." DisplayName="Revision" Format="Dropdown" Indexed="FALSE" List="{listid:TPL_Revisions}" Name="Revision" Required="TRUE" ShowField="Title" Title="Revision" Type="Lookup" ID="{bf83abc7-5222-4c6a-8bb1-95d7598f60c9}" Version="6" StaticName="Revision" SourceID="{{listid:New Sheet Entry}}" ColName="int3" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The Contractors full drawing number, including sheet number, excluding Revision description." DisplayName="Contractors Drawing &amp; New Sheet Number" Format="Dropdown" MaxLength="255" Name="ContractorsDrawingNumber" Required="TRUE" Title="Contractors Drawing &amp; New Sheet Number" Type="Text" ID="{d29e2cda-d944-4d76-9c80-2e4828f6fc17}" Version="2" StaticName="ContractorsDrawingNumber" SourceID="{{listid:New Sheet Entry}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The base drawing number that sheets will be added to." DisplayName="Employers Drawing Number: Title" FieldRef="b5c8c591-6dae-4399-967f-70e844995354" Format="Dropdown" IsModern="TRUE" List="{listid:Document List}" Name="Employers_x0020_Drawing_x0020_Nu" Required="TRUE" ShowField="Title" Title="Employers Drawing Number: Title" Type="Lookup" ID="{e56e45ed-36f8-4846-a200-acbf7a5ae542}" SourceID="{{listid:New Sheet Entry}}" StaticName="Employers_x0020_Drawing_x0020_Nu" ReadOnly="TRUE" Version="1" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The base drawing number that sheets will be added to." DisplayName="Document Type" Format="Dropdown" Name="Employers_x0020_Drawing_x0020_Nu0" Required="TRUE" Title="Document Type" Type="Lookup" ID="{375b1faf-3a62-43f1-8aeb-31f83097b210}" Version="3" FieldRef="b5c8c591-6dae-4399-967f-70e844995354" List="{listid:Document List}" ShowField="DocumentType" ReadOnly="TRUE" StaticName="Employers_x0020_Drawing_x0020_Nu0" SourceID="{{listid:New Sheet Entry}}" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The base drawing number that sheets will be added to." DisplayName="Discipline" Format="Dropdown" Name="Employers_x0020_Drawing_x0020_Nu1" Required="TRUE" Title="Discipline" Type="Lookup" ID="{ba08338d-e3a6-4edc-8e3d-8aeac16950ea}" Version="3" FieldRef="b5c8c591-6dae-4399-967f-70e844995354" List="{listid:Document List}" ShowField="Discipline" ReadOnly="TRUE" StaticName="Employers_x0020_Drawing_x0020_Nu1" SourceID="{{listid:New Sheet Entry}}" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="The base drawing number that sheets will be added to." DisplayName="Employers Base Drawing Number" Format="Dropdown" Name="Employers_x0020_Drawing_x0020_Nu2" Required="TRUE" Title="Employers Base Drawing Number" Type="Lookup" ID="{e24d4964-79fa-400b-8120-20f88edefc91}" Version="3" FieldRef="b5c8c591-6dae-4399-967f-70e844995354" List="{listid:Document List}" ShowField="EmployerDocumentNumber" ReadOnly="TRUE" StaticName="Employers_x0020_Drawing_x0020_Nu2" SourceID="{{listid:New Sheet Entry}}" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-borderColor-GoldFont sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Under Employer Review&quot;]},&quot;sp-css-backgroundColor-BgLightGray sp-css-borderColor-LightGrayFont sp-css-color-LightGrayFont sp-css-color-LightGrayFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-backgroundColor-BgCoral sp-css-color-CoralFont sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-borderColor-MintGreenFont sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$EntryStatus]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Under Employer Review&quot;]},&quot;sp-css-color-LightGrayFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$EntryStatus]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-color-MintGreenFont&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="Entry Status" FillInChoice="FALSE" Format="Dropdown" Name="EntryStatus" Title="Entry Status" Type="Choice" ID="{ae49137a-f737-4def-8cb8-a4b030d785e3}" Version="2" StaticName="EntryStatus" SourceID="{{listid:New Sheet Entry}}" ColName="nvarchar9" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Contractors Draft</CHOICE>
+                <CHOICE>Submitted by Contractor</CHOICE>
+                <CHOICE>Under Employer Review</CHOICE>
+                <CHOICE>Rejected by Employer</CHOICE>
+                <CHOICE>Reviewed by Employer</CHOICE>
+              </CHOICES>
+              <Default>Contractors Draft</Default>
+            </Field>
+            <Field DisplayName="Employers Drawing Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EmployersDrawingNumber" Title="Employers Drawing Number" Type="Text" ID="{e301ffb9-bf7d-44b3-8d76-19619285c5ab}" SourceID="{{listid:New Sheet Entry}}" StaticName="EmployersDrawingNumber" ColName="nvarchar11" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Revised Document Entry" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Revised Document Entry" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Revised Document Entry/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Revised Document Entry/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Revised Document Entry/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{30A6A5C6-1985-48F4-9526-2BADB7134937}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Revised Document Entry/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ContractDocumentNumber" />
+                <FieldRef Name="Revision" />
+                <FieldRef Name="Contract_x0020_Document_x0020_Nu" />
+                <FieldRef Name="Contract_x0020_Document_x0020_Nu0" />
+                <FieldRef Name="Contract_x0020_Document_x0020_Nu1" />
+                <FieldRef Name="Contract_x0020_Document_x0020_Nu2" />
+                <FieldRef Name="CDRStatus" />
+                <FieldRef Name="EmployersDocumentNumber" />
+                <FieldRef Name="ContractorsDocumentNumber" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Contract Document Number" Format="Dropdown" Indexed="FALSE" IsModern="TRUE" List="{listid:Document List}" Name="ContractDocumentNumber" Required="TRUE" ShowField="ContractorDocumentNumber" Title="Contract Document Number" Type="Lookup" ID="{f1eba181-8ed0-4cbc-9b20-1bc2fae85794}" SourceID="{{listid:Revised Document Entry}}" StaticName="ContractDocumentNumber" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="Contract Document Number: Title" FieldRef="f1eba181-8ed0-4cbc-9b20-1bc2fae85794" Format="Dropdown" IsModern="TRUE" List="{listid:Document List}" Name="Contract_x0020_Document_x0020_Nu" Required="TRUE" ShowField="Title" Title="Contract Document Number: Title" Type="Lookup" ID="{8ab207e7-82f3-451a-9546-45a82e18c9fb}" SourceID="{{listid:Revised Document Entry}}" StaticName="Contract_x0020_Document_x0020_Nu" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Contract Document Number: Employer Document Number" FieldRef="f1eba181-8ed0-4cbc-9b20-1bc2fae85794" Format="Dropdown" IsModern="TRUE" List="{listid:Document List}" Name="Contract_x0020_Document_x0020_Nu0" Required="TRUE" ShowField="EmployerDocumentNumber" Title="Contract Document Number: Employer Document Number" Type="Lookup" ID="{b0145cfa-3a60-4de1-bc6a-02f5839b7f52}" SourceID="{{listid:Revised Document Entry}}" StaticName="Contract_x0020_Document_x0020_Nu0" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Contract Document Number: Document Type" FieldRef="f1eba181-8ed0-4cbc-9b20-1bc2fae85794" Format="Dropdown" IsModern="TRUE" List="{listid:Document List}" Name="Contract_x0020_Document_x0020_Nu1" Required="TRUE" ShowField="DocumentType" Title="Contract Document Number: Document Type" Type="Lookup" ID="{479288b1-6991-45b1-8147-1310e6206e8c}" SourceID="{{listid:Revised Document Entry}}" StaticName="Contract_x0020_Document_x0020_Nu1" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Contract Document Number: Discipline" FieldRef="f1eba181-8ed0-4cbc-9b20-1bc2fae85794" Format="Dropdown" IsModern="TRUE" List="{listid:Document List}" Name="Contract_x0020_Document_x0020_Nu2" Required="TRUE" ShowField="Discipline" Title="Contract Document Number: Discipline" Type="Lookup" ID="{706042d5-f1eb-4cfa-b406-7d7d0c7fd50e}" SourceID="{{listid:Revised Document Entry}}" StaticName="Contract_x0020_Document_x0020_Nu2" ReadOnly="TRUE" Version="1" />
+            <Field DisplayName="Revision" Format="Dropdown" Indexed="FALSE" IsModern="TRUE" List="{listid:TPL_Revisions}" Name="Revision" Required="TRUE" ShowField="Title" Title="Revision" Type="Lookup" ID="{992d15bf-09a6-4dd2-8a7c-d71b3751d728}" SourceID="{{listid:Revised Document Entry}}" StaticName="Revision" ColName="int2" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-borderColor-GoldFont sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-borderColor-MintGreenFont sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-backgroundColor-BgCoral sp-css-color-CoralFont sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Under Review by Employer&quot;]},&quot;sp-css-backgroundColor-BgLightGray sp-css-borderColor-LightGrayFont sp-css-color-LightGrayFont sp-css-color-LightGrayFont&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$CDRStatus]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Contractors Draft&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Submitted by Contractor&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Reviewed by Employer&quot;]},&quot;sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Rejected by Employer&quot;]},&quot;sp-css-color-CoralFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$CDRStatus]&quot;,&quot;Under Review by Employer&quot;]},&quot;sp-css-color-LightGrayFont&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="Entry Status" FillInChoice="FALSE" Format="Dropdown" Name="CDRStatus" Title="Entry Status" Type="Choice" ID="{a1889707-efb4-44c4-93a9-f8101c9edecc}" Version="2" StaticName="CDRStatus" SourceID="{{listid:Revised Document Entry}}" ColName="nvarchar7" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Contractors Draft</CHOICE>
+                <CHOICE>Submitted by Contractor</CHOICE>
+                <CHOICE>Reviewed by Employer</CHOICE>
+                <CHOICE>Rejected by Employer</CHOICE>
+                <CHOICE>Under Review by Employer</CHOICE>
+              </CHOICES>
+              <Default>Contractors Draft</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Entry Type" Format="Dropdown" MaxLength="255" Name="EntryType" Title="Entry Type" Type="Text" ID="{e43d00b9-cbe3-4f88-96b4-79e155030979}" Version="2" StaticName="EntryType" SourceID="{{listid:Revised Document Entry}}" ColName="nvarchar8" RowOrdinal="0">
+              <Default>Revised Entry</Default>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Employers Document Number (Proposed)" Format="Dropdown" MaxLength="255" Name="EmployersDocumentNumber" Title="Employers Document Number (Proposed)" Type="Text" ID="{72fb0ed0-b1a6-4548-96ae-665dc9b4bc53}" Version="2" StaticName="EmployersDocumentNumber" SourceID="{{listid:Revised Document Entry}}" ColName="nvarchar9" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Contractors Document Number (Proposed)" Format="Dropdown" MaxLength="255" Name="ContractorsDocumentNumber" Title="Contractors Document Number (Proposed)" Type="Text" ID="{9641ff7f-ddb2-4d39-ba83-00e4400835a2}" Version="2" StaticName="ContractorsDocumentNumber" SourceID="{{listid:Revised Document Entry}}" ColName="nvarchar10" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Sheet Numbers" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Sheet Numbers" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Sheet Numbers/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Sheet Numbers/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Sheet Numbers/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" WriteSecurity="4" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{59FCB688-E380-433F-9EB1-D388CBB54DC4}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Sheet Numbers/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="TPL_Disciplines" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/TPL_Disciplines" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/TPL_Disciplines/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/TPL_Disciplines/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/TPL_Disciplines/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" WriteSecurity="4" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate-ContractorDocumentationRegister/SiteAssets/11364-TPL%20Lists-463b1244-9934-4356-a363-1a9a754b8eae.xlsx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{23141169-4F99-4FD8-99AB-7444036B4A8C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/TPL_Disciplines/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="field_1" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="Discipline Description" Name="field_1" ID="{e73ae0d0-13b2-4fcf-97f5-ab6e05a1596c}" Version="2" StaticName="field_1" SourceID="{{listid:TPL_Disciplines}}" ColName="nvarchar7" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="TPL_DocumentTypes" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/TPL_DocumentTypes" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/TPL_DocumentTypes/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/TPL_DocumentTypes/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/TPL_DocumentTypes/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" WriteSecurity="4" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="wte_Source" Value="https://greyjonescoza.sharepoint.com/sites/10080TPLProjectTemplate-ContractorDocumentationRegister/SiteAssets/11364-TPL%20Lists-99ef5a05-7a79-4c26-854a-d1c1af394012.xlsx" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{609E761E-D618-4A31-805E-7743F4FB525C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/TPL_DocumentTypes/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="field_3" />
+                </GroupBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Document_x0020_Type_x0020__x0028" />
+                <FieldRef Name="field_3" />
+                <FieldRef Name="field_1" />
+                <FieldRef Name="field_2" />
+                <FieldRef Name="NumberingPath0" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{B82D27C8-CDE4-4E08-A044-46FE3BFE55DC}" Type="HTML" DisplayName="Document Types" Url="{site}/Lists/TPL_DocumentTypes/Document Types.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Document_x0020_Type_x0020__x0028" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CalendarViewStyles>
+                <CalendarViewStyle Title="Day" Type="day" Template="CalendarViewdayChrome" Sequence="1" Default="FALSE" />
+                <CalendarViewStyle Title="Week" Type="week" Template="CalendarViewweekChrome" Sequence="2" Default="FALSE" />
+                <CalendarViewStyle Title="Month" Type="month" Template="CalendarViewmonthChrome" Sequence="3" Default="FALSE" />
+                <CalendarViewStyle Title="Work week" Type="workweek" Template="CalendarViewweekChrome" Sequence="4" Default="FALSE" />
+              </CalendarViewStyles>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="Description " Name="field_1" ID="{caaeb502-f8d3-4099-b8e2-4ff35fd8b999}" Version="2" StaticName="field_1" SourceID="{{listid:TPL_DocumentTypes}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Additional (doc type) Descriptions" Name="field_2" ID="{49da72f3-5fc1-471d-92c4-1d4cc657cc7c}" Version="3" StaticName="field_2" SourceID="{{listid:TPL_DocumentTypes}}" ColName="nvarchar8" RowOrdinal="0" CustomFormatter="" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" />
+            <Field Type="Text" DisplayName="Class" Name="field_3" ID="{af65d343-e02c-44cd-94dc-e52e8ba35a24}" Version="2" StaticName="field_3" SourceID="{{listid:TPL_DocumentTypes}}" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="Document Type (Display)" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{727e05f7-461e-4425-9e43-c5a91fb4d8c2}" SourceID="{{listid:TPL_DocumentTypes}}" StaticName="Document_x0020_Type_x0020__x0028" Name="Document_x0020_Type_x0020__x0028" ColName="sql_variant1" RowOrdinal="0" Version="1">
+              <Formula>=[Description ]&amp;IF(ISBLANK([Additional (doc type) Descriptions]),""," - "&amp;[Additional (doc type) Descriptions])</Formula>
+            </Field>
+            <Field DisplayName="Employer External Document Number" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="EmployerExternalDocumentNumber" Title="Employer External Document Number" Type="Text" ID="{aaba88aa-2e27-4034-8938-8ebd24f9197b}" SourceID="{{listid:TPL_DocumentTypes}}" StaticName="EmployerExternalDocumentNumber" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="NumberingPath" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="NumberingPath0" Title="NumberingPath" Type="Text" ID="{ff0cddd7-a425-44e9-83fb-443fff574f37}" SourceID="{{listid:TPL_DocumentTypes}}" StaticName="NumberingPath0" ColName="nvarchar12" RowOrdinal="0" Version="1" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="TPL_Revisions" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/TPL_Revisions" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/TPL_Revisions/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/TPL_Revisions/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/TPL_Revisions/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" WriteSecurity="4" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9413973B-907E-4DD9-B6EB-F64F748401C6}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/TPL_Revisions/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Revision" Format="Dropdown" Indexed="FALSE" IsModern="TRUE" List="{listid:TPL_Revisions}" Name="Revision" Required="TRUE" ShowField="Title" Title="Revision" Type="Lookup" ID="{eb53b24b-bc33-4441-8bc9-40a1eb3cc377}" SourceID="{{listid:TPL_Revisions}}" StaticName="Revision" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Features>
+        <pnp:SiteFeatures>
+          <pnp:Feature ID="371a9b45-6923-41d8-9f5d-6c4506e51b2e" />
+          <pnp:Feature ID="d28fa327-96ef-445e-8019-d62455a5630d" />
+        </pnp:SiteFeatures>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="de12eebe-9114-4a4a-b7da-7585dc36a907" />
+          <pnp:Feature ID="992f7f2f-1a54-4fb1-a29d-aca651e10c40" />
+          <pnp:Feature ID="65a86d9e-d9e0-493d-b877-f09550efdee1" />
+        </pnp:WebFeatures>
+      </pnp:Features>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/__sitelogo__TPLclientLogo.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:Header Layout="Compact" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
