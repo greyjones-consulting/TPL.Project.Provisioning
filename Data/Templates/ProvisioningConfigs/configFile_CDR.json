@@ -1,0 +1,57 @@
+{
+  "$schema": "https://aka.ms/sppnp-extract-configuration-schema",
+  "contentTypes": {
+    "excludeFromSyndication": true
+  },
+  "navigation": {
+    "removeExistingNodes": true
+  },
+  "pages": {
+    "includeAllClientSidePages": true
+  },
+  "persistAssetFiles": true,
+  "publishing": {
+    "persist": true
+  },
+  "siteSecurity": {
+    "includeSiteGroups": false
+  },
+  "taxonomy": {
+    "includeAllTermGroups": false,
+    "includeSecurity": false
+  },
+  "lists": {
+    "lists": [
+      {
+        "title": "TPL_Disciplines"
+      },
+      {
+        "title": "TPL_FunctionalDepots"
+      },
+      {
+        "title": "TPL_DocumentTypes"
+      },
+      {
+        "title": "New Document Entry"
+      },
+      {
+        "title": "TPL_Revisions"
+      },
+      {
+        "title": "Document List"
+      },
+      {
+        "title": "Revised Document Entry"
+      },
+      {
+        "title": "Contractor Document Register"
+      },
+      {
+        "title": "New Sheet Entry"
+      },
+      {
+        "title": "Sheet Numbers"
+      }
+    ]
+  }
+}
