@@ -5,21 +5,23 @@ param(
 
 Write-Host "=== Export Contractor Documentation Register Template (Config-driven) ===" -ForegroundColor Cyan
 
-# ====================== LOAD CONFIG ======================
-$repoRoot = Split-Path -Path $PSScriptRoot -Parent
-$appConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning/Config/AppConfig.psd1"
+# ====================== CALCULATE PATHS ======================
+$moduleRoot = Split-Path -Path $PSScriptRoot -Parent          # TPL.ProjectProvisioning
+$repoRoot = Split-Path -Path $moduleRoot -Parent            # Repository Root
 
+# Load AppConfig
+$appConfigPath = Join-Path $moduleRoot "Config\AppConfig.psd1"
 $appConfig = Import-PowerShellDataFile -Path $appConfigPath
 
-# Resolve Certificate Path
+# Resolve Certificate Path from repo root
 $appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath
 $CertificatePath = $appConfig.CertificatePath
 
 $cert = ConvertTo-SecureString -String $appConfig.CertificatePassword -AsPlainText -Force
 
-# ====================== PATHS FOR CDR ======================
-$provisioningConfigPath = Join-Path -Path $PSScriptRoot -ChildPath "..\\..\\Data\\Templates\\ProvisioningConfigs\\configFile_CDR.json"
-$templateOutPath = Join-Path -Path $PSScriptRoot -ChildPath "..\\..\\Data\\Templates\\projectSiteTemplates\\ContractorDocumentationRegister_v1.xml"
+# ====================== OTHER PATHS ======================
+$provisioningConfigPath = Join-Path $repoRoot "Data\Templates\ProvisioningConfigs\configFile_CDR.json"
+$templateOutPath = Join-Path $repoRoot "Data\Templates\projectSiteTemplates\ContractorDocumentationRegister_v1.xml"
 
 # ====================== CONNECT ======================
 Connect-PnPOnline -Url $SourceUrl `

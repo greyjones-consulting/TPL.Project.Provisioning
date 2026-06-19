@@ -4,7 +4,7 @@
     "excludeFromSyndication": true
   },
   "navigation": {
-    "removeExistingNodes": true
+    "removeExistingNodes": false
   },
   "pages": {
     "includeAllClientSidePages": false
