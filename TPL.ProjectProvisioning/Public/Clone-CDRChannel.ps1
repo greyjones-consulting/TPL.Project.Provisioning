@@ -20,7 +20,7 @@ Write-Host "=== Export Contractor Documentation Register Template ===" -Foregrou
 Write-Host "Source site: $SourceUrl" -ForegroundColor Yellow
 
 # ====================== LOAD CENTRALISED CONFIGURATION ======================
-$configPath = Join-Path -Path $PSScriptRoot -ChildPath "..\TPL.ProjectProvisioning\Config\AppConfig.psd1"
+$configPath = Join-Path -Path $PSScriptRoot -ChildPath "../../TPL.ProjectProvisioning/Config/AppConfig.psd1"
 if (-not (Test-Path $configPath)) {
     Write-Error "AppConfig.psd1 not found at $configPath. Make sure it exists locally (it is gitignored for security)."
     exit 1
