@@ -5,13 +5,13 @@ param(
 
 Write-Host "=== Export Contractor Documentation Register Template (Config-driven) ===" -ForegroundColor Cyan
 
-# ====================== CALCULATE PATHS ======================
-$moduleRoot = Split-Path -Path $PSScriptRoot -Parent          # TPL.ProjectProvisioning
-$repoRoot = Split-Path -Path $moduleRoot -Parent            # Repository Root
+# ====================== LOAD CONFIG (Correct path from Scripts/) ======================
+$repoRoot = Split-Path -Path $PSScriptRoot -Parent
+$appConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning\Config\AppConfig.psd1"
 
-# Load AppConfig
-$appConfigPath = Join-Path $moduleRoot "Config\AppConfig.psd1"
 $appConfig = Import-PowerShellDataFile -Path $appConfigPath
+
+$appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath
 
 # Resolve Certificate Path from repo root
 $appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath

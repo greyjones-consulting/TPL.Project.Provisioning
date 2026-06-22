@@ -11,15 +11,15 @@ Write-Host "=== Import CDR List Data ===" -ForegroundColor Cyan
 Write-Host "Source: $SourceUrl" -ForegroundColor Yellow
 Write-Host "Target: $TargetUrl" -ForegroundColor Yellow
 
-# ====================== LOAD CONFIG ======================
-$repoRoot = Split-Path -Path $PSScriptRoot -Parent
-$appConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning\Config\AppConfig.psd1"
-$syncConfigPath = Join-Path $repoRoot "TPL.ProjectProvisioning\Config\ListSyncConfig.psd1"
+# ====================== LOAD CONFIG (Correct path from Public/) ======================
+$moduleRoot = Split-Path -Path $PSScriptRoot -Parent
+$appConfigPath = Join-Path $moduleRoot "Config\AppConfig.psd1"
+$syncConfigPath = Join-Path $moduleRoot "Config\ListSyncConfig.psd1"
 
 $appConfig = Import-PowerShellDataFile -Path $appConfigPath
 $syncConfig = Import-PowerShellDataFile -Path $syncConfigPath
 
-$appConfig.CertificatePath = Join-Path $repoRoot $appConfig.CertificatePath
+$appConfig.CertificatePath = Join-Path $moduleRoot $appConfig.CertificatePath
 $cert = ConvertTo-SecureString -String $appConfig.CertificatePassword -AsPlainText -Force
 
 # Use config if no lists specified
