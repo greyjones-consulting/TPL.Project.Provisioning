@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
   <pnp:Preferences Generator="PnP.Framework, Version=1.18.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
-  <pnp:Templates ID="CONTAINER-TEMPLATE-A967D3D6A5E649F09F23DEC7BDCCD999">
-    <pnp:ProvisioningTemplate ID="TEMPLATE-A967D3D6A5E649F09F23DEC7BDCCD999" Version="1" BaseSiteTemplate="TEAMCHANNEL#1" Scope="RootSite">
+  <pnp:Templates ID="CONTAINER-TEMPLATE-491F5FD82513457AB57A92C06CEE6B72">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-491F5FD82513457AB57A92C06CEE6B72" Version="1" BaseSiteTemplate="TEAMCHANNEL#1" Scope="RootSite">
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__TPLclientLogo.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
       <pnp:SiteSettings AllowDesigner="true" AllowCreateDeclarativeWorkflow="true" AllowSaveDeclarativeWorkflowAsTemplate="true" AllowSavePublishDeclarativeWorkflow="true" SearchBoxInNavBar="Inherit" SearchCenterUrl="" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="50" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
       <pnp:PropertyBagEntries>
-        <pnp:PropertyBagEntry Key="TeamChannelManager_LastSyncTimeStamp" Value="2026/06/19 08:12:07" Overwrite="false" />
+        <pnp:PropertyBagEntry Key="TeamChannelManager_LastSyncTimeStamp" Value="2026/06/22 08:10:53" Overwrite="false" />
         <pnp:PropertyBagEntry Key="FooterOverlayColor" Value="-1" Overwrite="false" />
         <pnp:PropertyBagEntry Key="ThemePrimary" Value="#0D2640" Overwrite="false" Indexed="true" />
         <pnp:PropertyBagEntry Key="FooterColorIndexInDarkMode" Value="-1" Overwrite="false" />
@@ -58,64 +58,53 @@
             <ArrayOfProperty>
               <Property>
                 <Name>SspId</Name>
-                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
               </Property>
               <Property>
                 <Name>GroupId</Name>
               </Property>
               <Property>
                 <Name>TermSetId</Name>
-                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
               </Property>
               <Property>
                 <Name>AnchorId</Name>
-                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
               </Property>
               <Property>
                 <Name>UserCreated</Name>
-                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>Open</Name>
-                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>TextField</Name>
-                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{1390a86a-23da-45f0-8efe-ef36edadfb39}</Value>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{1390a86a-23da-45f0-8efe-ef36edadfb39}</Value>
               </Property>
               <Property>
                 <Name>IsPathRendered</Name>
-                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>IsKeyword</Name>
-                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
               </Property>
               <Property>
                 <Name>TargetTemplate</Name>
               </Property>
               <Property>
                 <Name>CreateValuesInEditForm</Name>
-                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>IsDocTagsEnabled</Name>
-                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>IsEnhancedImageTaggingEnabled</Name>
-                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
-                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
               </Property>
               <Property>
                 <Name>FilterAssemblyStrongName</Name>
@@ -1744,16 +1733,16 @@
               <pnp:DataValue FieldName="ComplianceAssetId"></pnp:DataValue>
               <pnp:DataValue FieldName="field_1">Project Management</pnp:DataValue>
               <pnp:DataValue FieldName="ID">19</pnp:DataValue>
-              <pnp:DataValue FieldName="Modified">2026-06-18T05:24:54Z</pnp:DataValue>
+              <pnp:DataValue FieldName="Modified">2026-06-22T07:53:06Z</pnp:DataValue>
               <pnp:DataValue FieldName="Created">2026-05-14T16:00:22Z</pnp:DataValue>
               <pnp:DataValue FieldName="Author">blakej@greyjones.co.za</pnp:DataValue>
               <pnp:DataValue FieldName="Editor">blakej@greyjones.co.za</pnp:DataValue>
               <pnp:DataValue FieldName="_HasCopyDestinations"></pnp:DataValue>
               <pnp:DataValue FieldName="_CopySource"></pnp:DataValue>
-              <pnp:DataValue FieldName="owshiddenversion">3</pnp:DataValue>
+              <pnp:DataValue FieldName="owshiddenversion">5</pnp:DataValue>
               <pnp:DataValue FieldName="WorkflowVersion">1</pnp:DataValue>
-              <pnp:DataValue FieldName="_UIVersion">1536</pnp:DataValue>
-              <pnp:DataValue FieldName="_UIVersionString">3.0</pnp:DataValue>
+              <pnp:DataValue FieldName="_UIVersion">2560</pnp:DataValue>
+              <pnp:DataValue FieldName="_UIVersionString">5.0</pnp:DataValue>
               <pnp:DataValue FieldName="Attachments">False</pnp:DataValue>
               <pnp:DataValue FieldName="_ModerationStatus">0</pnp:DataValue>
               <pnp:DataValue FieldName="InstanceID"></pnp:DataValue>
@@ -1793,7 +1782,7 @@
               <pnp:DataValue FieldName="_DraftOwnerId"></pnp:DataValue>
               <pnp:DataValue FieldName="AppAuthor"></pnp:DataValue>
               <pnp:DataValue FieldName="AppEditor"></pnp:DataValue>
-              <pnp:DataValue FieldName="SMTotalSize">292</pnp:DataValue>
+              <pnp:DataValue FieldName="SMTotalSize">410</pnp:DataValue>
               <pnp:DataValue FieldName="SMLastModifiedDate"></pnp:DataValue>
               <pnp:DataValue FieldName="SMTotalFileStreamSize"></pnp:DataValue>
               <pnp:DataValue FieldName="SMTotalFileCount">0</pnp:DataValue>
@@ -1878,7 +1867,7 @@
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{609E761E-D618-4A31-805E-7743F4FB525C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/TPL_DocumentTypes/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+            <View Name="{609E761E-D618-4A31-805E-7743F4FB525C}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/TPL_DocumentTypes/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
               <Query>
                 <GroupBy Collapse="FALSE">
                   <FieldRef Name="field_3" />
@@ -1895,7 +1884,7 @@
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>
             </View>
-            <View Name="{B82D27C8-CDE4-4E08-A044-46FE3BFE55DC}" Type="HTML" DisplayName="Document Types" Url="{site}/Lists/TPL_DocumentTypes/Document Types.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+            <View Name="{B82D27C8-CDE4-4E08-A044-46FE3BFE55DC}" DefaultView="TRUE" Type="HTML" DisplayName="Document Types" Url="{site}/Lists/TPL_DocumentTypes/Document Types.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
               <Query />
               <ViewFields>
                 <FieldRef Name="LinkTitle" />
