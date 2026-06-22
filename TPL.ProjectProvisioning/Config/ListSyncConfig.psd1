@@ -1,83 +1,29 @@
 ﻿@{
-    # ====================== SOURCE COLUMN REFERENCE (Self-documenting) ======================
-    # Exact columns from your Projects_Source of Truth list (as per your original instructions)
-    SourceColumns = @{
-        "Number"              = "Title"
-        "Client"              = "Client"
-        "Visit Site"          = "Visit_x0020_Site"
-        "Stage"               = "field_3"
-        "Project Status"      = "field_4"
-        "Project Description" = "field_5"
-        "Shortname"           = "field_6"
-        "Start Date"          = "Start_x0020_Date"
-        "Completion Date"     = "Completion_x0020_Date"
-        "Fee Value"           = "field_11"               # Marketing only
-        "Proposal Feedback"   = "field_17"               # Marketing only
-        "Client Contact"      = "Client_x0020_Contact"   # lookup column (source)
-    }
+    # =========================================================================
+    # CDR Reference Lists - Data Sync Configuration
+    # Used by Import-CDRListData.ps1
+    # =========================================================================
 
-    # ====================== SOURCE OF TRUTH ======================
-    SourceList    = @{
-        Url        = "https://greyjonescoza.sharepoint.com/sites/ProjectPipeline-Database"
-        ListName   = "Projects_SourceOfTruth"
-        MatchField = "Title"
-    }
+    CDRReferenceLists = @{
 
-    # ====================== TARGET LISTS (exact internal names from your original instructions) ======================
-    TargetLists   = @{
-        Marketing       = @{
-            Url           = "https://greyjonescoza.sharepoint.com/sites/Marketing-LeadsandTenders"
-            ListName      = "Project List"
-            ColumnMapping = @{
-                Title                 = "Title"
-                Client                = "Client"
-                Visit_x0020_Site      = "Visit_x0020_Site"
-                field_3               = "Stage"
-                field_4               = "Project_x0020_Status"
-                field_5               = "Name"
-                field_6               = "Shortname"
-                Start_x0020_Date      = "Start_x0020_Date"
-                Completion_x0020_Date = "Completion_x0020_Date"
-                Client_x0020_Contact  = "Client_x0020_Contact"   # Marketing only
-                field_11              = "Fee_x0020_Value"
-                field_17              = "Proposal_x0020_Feedback"
-            }
+        "TPL_Disciplines"   = @{
+            Fields = @("Title", "field_1")          # Title + Discipline Description
         }
 
-        HR              = @{
-            Url           = "https://greyjonescoza.sharepoint.com/sites/HR"
-            ListName      = "Project List"
-            ColumnMapping = @{
-                Title                 = "Title"
-                Client                = "Client"
-                Visit_x0020_Site      = "Visit_x0020_Site"
-                field_3               = "Stage"
-                field_4               = "Project_x0020_Status"
-                field_5               = "Name"
-                field_6               = "Shortname"
-                Start_x0020_Date      = "Start_x0020_Date"
-                Completion_x0020_Date = "Completion_x0020_Date"
-                Client_x0020_Contact  = "Contact"                # HR uses this name (per your instructions)
-            }
+        "TPL_DocumentTypes" = @{
+            Fields = @(
+                "Title",
+                "field_1",                              # Description
+                "field_2",                              # Additional Description
+                "field_3",                              # Class
+                "Document_x0020_Type_x0020__x0028",     # Document Type (Display)
+                "NumberingPath0",
+                "EmployerExternalDocumentNumber"
+            )
         }
 
-        ProjectPipeline = @{
-            Url           = "https://greyjonescoza.sharepoint.com/sites/ProjectPipeline"
-            ListName      = "Project List"
-            ColumnMapping = @{
-                Title                 = "Title"
-                Client                = "Client"
-                Visit_x0020_Site      = "Visit_x0020_Site"
-                field_3               = "Stage"
-                field_4               = "Project_x0020_Status"
-                field_5               = "Name"
-                field_6               = "Shortname"
-                Start_x0020_Date      = "Start_x0020_Date"
-                Completion_x0020_Date = "Completion_x0020_Date"
-                Client_x0020_Contact  = "Contact"                # Project Pipeline uses this name (per your instructions)
-            }
+        "TPL_Revisions"     = @{
+            Fields = @("Title")
         }
     }
-
-    LogPath       = "../../Logs/ProjectDataSync.log"
 }
