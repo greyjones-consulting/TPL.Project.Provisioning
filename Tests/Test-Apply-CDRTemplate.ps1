@@ -44,7 +44,11 @@ Connect-PnPOnline -Url $TargetSiteUrl `
 Write-Host "Applying CDR template..." -ForegroundColor Cyan
 
 try {
-    Invoke-PnPSiteTemplate -Path $templatePath -Verbose -ErrorAction Stop
+    Invoke-PnPSiteTemplate -Path $templatePath `
+        -Handlers Lists `
+        -Force `
+        -Verbose `
+        -ErrorAction Continue
     Write-Host "✅ CDR Template applied successfully!" -ForegroundColor Green
 }
 catch {
