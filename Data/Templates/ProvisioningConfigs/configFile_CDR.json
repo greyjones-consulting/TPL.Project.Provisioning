@@ -4,10 +4,10 @@
     "excludeFromSyndication": true
   },
   "navigation": {
-    "removeExistingNodes": false
+    "removeExistingNodes": true
   },
   "pages": {
-    "includeAllClientSidePages": false
+    "includeAllClientSidePages": true
   },
   "persistAssetFiles": true,
   "publishing": {
@@ -23,34 +23,44 @@
   "lists": {
     "lists": [
       {
-        "title": "TPL_Disciplines"
+        "title": "TPL_Disciplines",
+        "includeItems": true
       },
       {
-        "title": "TPL_FunctionalDepots"
+        "title": "TPL_FunctionalDepots",
+        "includeItems": false
       },
       {
-        "title": "TPL_DocumentTypes"
+        "title": "TPL_DocumentTypes",
+        "includeItems": false
       },
       {
-        "title": "New Document Entry"
+        "title": "New Document Entry",
+        "includeItems": false
       },
       {
-        "title": "TPL_Revisions"
+        "title": "TPL_Revisions",
+        "includeItems": false
       },
       {
-        "title": "Document List"
+        "title": "Document List",
+        "includeItems": false
       },
       {
-        "title": "Revised Document Entry"
+        "title": "Revised Document Entry",
+        "includeItems": false
       },
       {
-        "title": "Contractor Document Register"
+        "title": "Contractor Document Register",
+        "includeItems": false
       },
       {
-        "title": "New Sheet Entry"
+        "title": "New Sheet Entry",
+        "includeItems": false
       },
       {
-        "title": "Sheet Numbers"
+        "title": "Sheet Numbers",
+        "includeItems": false
       }
     ]
   }
