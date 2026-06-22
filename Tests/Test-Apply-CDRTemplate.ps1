@@ -46,9 +46,11 @@ Write-Host "Applying CDR template..." -ForegroundColor Cyan
 try {
     Invoke-PnPSiteTemplate -Path $templatePath `
         -Handlers Lists `
-        -Force `
-        -Verbose `
-        -ErrorAction Continue
+        -Verbose
+    Write-Host "✅ First CDR Template applied successfully!" -ForegroundColor Green
+    Invoke-PnPSiteTemplate -Path $templatePath `
+        -Handlers Lists `
+        -Verbose
     Write-Host "✅ CDR Template applied successfully!" -ForegroundColor Green
 }
 catch {
