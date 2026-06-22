@@ -24,7 +24,7 @@
     "lists": [
       {
         "title": "TPL_Disciplines",
-        "includeItems": true
+        "includeItems": false
       },
       {
         "title": "TPL_FunctionalDepots",

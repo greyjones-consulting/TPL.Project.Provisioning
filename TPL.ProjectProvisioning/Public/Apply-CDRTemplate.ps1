@@ -40,18 +40,13 @@ Connect-PnPOnline -Url $TargetSiteUrl `
     -CertificatePath $CertificatePath `
     -CertificatePassword $cert
 
-# ====================== APPLY TEMPLATE ======================
 Write-Host "Applying CDR template..." -ForegroundColor Cyan
 
 try {
     Invoke-PnPSiteTemplate -Path $templatePath `
-        -Handlers Lists `
-        -Verbose
+        -Verbose `
+        -Handlers Lists
     Write-Host "✅ First CDR Template applied successfully!" -ForegroundColor Green
-    Invoke-PnPSiteTemplate -Path $templatePath `
-        -Handlers Lists `
-        -Verbose
-    Write-Host "✅ CDR Template applied successfully!" -ForegroundColor Green
 }
 catch {
     Write-Error "Failed to apply template: $($_.Exception.Message)"
